@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase | E-commerce Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">ShopEase</a>
+    <nav><a href="#products">Products</a><a href="#cart">Cart <span id="cart-count">0</span></a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div><p class="eyebrow">FRONTEND PROJECT 01</p><h1>Everyday shopping,<br><span>made simple.</span></h1>
+      <p>Browse products, add items to your cart and try a demo checkout.</p><a class="button" href="#products">Explore products</a></div>
+      <div class="hero-art" aria-hidden="true">🛍️</div>
+    </section>
+    <section class="section" id="products">
+      <div class="section-heading"><div><p class="eyebrow">OUR COLLECTION</p><h2>Featured products</h2></div><input id="search" type="search" placeholder="Search products..." aria-label="Search products"></div>
+      <div id="product-grid" class="product-grid"></div>
+    </section>
+    <section class="section cart-section" id="cart">
+      <div class="section-heading"><div><p class="eyebrow">YOUR BAG</p><h2>Shopping cart</h2></div><button id="clear-cart" class="button secondary">Clear cart</button></div>
+      <div id="cart-items"></div>
+      <div class="cart-bottom"><strong id="cart-total">Total: ₹0</strong><button id="checkout" class="button">Place demo order</button></div>
+      <p class="note">Demo only: checkout does not collect payment or send an order to a server.</p>
+    </section>
+    <section class="section account">
+      <div><p class="eyebrow">DEMO ACCOUNT</p><h2>Register / Login</h2><p class="muted">This demo stores a display name in this browser only. Do not enter a real password.</p></div>
+      <form id="account-form"><label>Display name<input id="display-name" required maxlength="40" placeholder="Your name"></label><button class="button" type="submit">Save demo profile</button><button class="button secondary" id="logout" type="button">Log out</button><p id="account-message" role="status"></p></form>
+    </section>
+  </main>
+  <footer>ShopEase · Student project · HTML, CSS & JavaScript</footer>
+  <script src="script.js"></script>
+</body>
+</html>
